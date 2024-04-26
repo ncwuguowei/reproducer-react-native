@@ -85,7 +85,7 @@ function App(): React.JSX.Element {
           <Button
             title="Compute"
             onPress={async () => {
-              const value = await RTNCalculator?.add(3, 7);
+              const value = await RTNCalculator.add(3, 7);
               console.log("RTNCalculator add result:" + value);
             }}
           />
