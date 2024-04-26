@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Button
 } from 'react-native';
 
 import {
@@ -24,6 +25,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import RTNCalculator from './js/NativeCalculator';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -79,6 +82,13 @@ function App(): React.JSX.Element {
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
+          <Button
+            title="Compute"
+            onPress={async () => {
+              const value = await RTNCalculator?.add(3, 7);
+              console.log("RTNCalculator add result:" + value);
+            }}
+          />
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
