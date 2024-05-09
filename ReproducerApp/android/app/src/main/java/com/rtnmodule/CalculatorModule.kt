@@ -1,7 +1,8 @@
-package com.rtncalculator
+package com.rtnmodule
 
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
+import com.rtn.specs.NativeCalculatorSpec
 
 class CalculatorModule internal constructor(context: ReactApplicationContext?) :
     NativeCalculatorSpec(context) {

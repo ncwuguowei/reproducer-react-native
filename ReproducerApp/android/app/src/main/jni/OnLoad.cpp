@@ -33,6 +33,7 @@
 #include <react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h>
 #include <rncli.h>
 #include <RTNAppModuleSpec.h>
+#include "ComponentDescriptors.h"
 
 namespace facebook::react {
 
@@ -43,6 +44,8 @@ void registerComponents(
   //
   // providerRegistry->add(concreteComponentDescriptorProvider<
   //        AocViewerComponentDescriptor>());
+
+  registry->add(concreteComponentDescriptorProvider<RTNCenteredTextComponentDescriptor>());
 
   // By default we just use the components autolinked by RN CLI
   rncli_registerProviders(registry);

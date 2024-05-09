@@ -39,7 +39,7 @@
     "jsSrcsDir": "js",
     "includesGeneratedCode": true,
     "android": {
-      "javaPackageName": "com.rtncalculator"
+      "javaPackageName": "com.rtn.specs"
     }
   }
 }

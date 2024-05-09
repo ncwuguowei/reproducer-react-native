@@ -1,4 +1,4 @@
-package com.rtncalculator
+package com.rtnmodule
 
 import com.facebook.react.TurboReactPackage
 import com.facebook.react.bridge.NativeModule

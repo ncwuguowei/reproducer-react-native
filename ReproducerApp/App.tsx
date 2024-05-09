@@ -27,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import RTNCalculator from './js/NativeCalculator';
+import RTNCenteredText from './js/RTNAppModuleSpecNativeComponent';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -99,6 +100,12 @@ function App(): React.JSX.Element {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
+          <Section title='Test Fabric'>
+            <RTNCenteredText
+                 text="Hello World!"
+                 style={{width: '100%', height: 30}}
+               />
+           </Section>
           <LearnMoreLinks />
         </View>
       </ScrollView>
