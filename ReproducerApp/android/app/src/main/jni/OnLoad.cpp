@@ -32,7 +32,7 @@
 #include <fbjni/fbjni.h>
 #include <react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h>
 #include <rncli.h>
-#include "RTNCalculatorSpec.h"
+#include <RTNAppModuleSpec.h>
 
 namespace facebook::react {
 
@@ -67,7 +67,7 @@ std::shared_ptr<TurboModule> javaModuleProvider(
   //    return module;
   // }
 
-  auto module = RTNCalculatorSpec_ModuleProvider(name, params);
+  auto module = RTNAppModuleSpec_ModuleProvider(name, params);
   if (module != nullptr) {
       return module;
   }

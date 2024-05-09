@@ -34,7 +34,7 @@
     "node": ">=18"
   },
   "codegenConfig": {
-    "name": "RTNCalculatorSpec",
+    "name": "RTNAppModuleSpec",
     "type": "all",
     "jsSrcsDir": "js",
     "includesGeneratedCode": true,
