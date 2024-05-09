@@ -12,7 +12,7 @@ import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
 import com.facebook.soloader.SoLoader
 import com.rtnmodule.CalculatorPackage
-import com.rtnmodule.component.RTNCenteredTextPackage
+import com.rtnmodule.component.RTNComponentPackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -25,7 +25,7 @@ class MainApplication : Application(), ReactApplication {
 
               // NOTE: create turboModule in app but not as a library
               add(CalculatorPackage())
-              add(RTNCenteredTextPackage())
+              add(RTNComponentPackage())
             }
 
         override fun getJSMainModuleName(): String = "index"

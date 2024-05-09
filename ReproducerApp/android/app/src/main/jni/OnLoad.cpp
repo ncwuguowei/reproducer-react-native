@@ -46,6 +46,7 @@ void registerComponents(
   //        AocViewerComponentDescriptor>());
 
   registry->add(concreteComponentDescriptorProvider<RTNCenteredTextComponentDescriptor>());
+  registry->add(concreteComponentDescriptorProvider<RTNCustomTextComponentDescriptor>());
 
   // By default we just use the components autolinked by RN CLI
   rncli_registerProviders(registry);

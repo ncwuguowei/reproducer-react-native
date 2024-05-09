@@ -5,10 +5,13 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 
-class RTNCenteredTextPackage : ReactPackage {
+class RTNComponentPackage : ReactPackage {
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
-        return listOf<ViewManager<*, *>>(RTNCenteredTextManager(reactContext))
+        return listOf<ViewManager<*, *>>(
+            RTNCenteredTextManager(reactContext),
+            RTNCustomTextManager(reactContext)
+        )
     }
 
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {

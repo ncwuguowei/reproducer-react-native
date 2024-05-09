@@ -27,7 +27,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import RTNCalculator from './js/NativeCalculator';
-import RTNCenteredText from './js/RTNAppModuleSpecNativeComponent';
+import RTNCenteredText from './js/RTNCenteredTextNativeComponent';
+import RTNCustomText from './js/RTNCustomTextNativeComponent';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -106,6 +107,13 @@ function App(): React.JSX.Element {
                  style={{width: '100%', height: 30}}
                />
            </Section>
+           <Section title='Test Fabric'>
+              <RTNCustomText
+                   text="RTNCustomText!"
+                   textColor="#000000"
+                   style={{width: '100%', height: 30, backgroundColor:'#FFFF00'}}
+                 />
+          </Section>
           <LearnMoreLinks />
         </View>
       </ScrollView>
