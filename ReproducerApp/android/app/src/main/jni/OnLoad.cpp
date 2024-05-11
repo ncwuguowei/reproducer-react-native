@@ -32,8 +32,8 @@
 #include <fbjni/fbjni.h>
 #include <react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h>
 #include <rncli.h>
-#include <RTNAppModuleSpec.h>
-#include "ComponentDescriptors.h"
+#include "RTNAppModuleSpec.h"
+#include "react/renderer/components/RTNAppModuleSpec/ComponentDescriptors.h"
 
 namespace facebook::react {
 
